@@ -28,7 +28,7 @@ When running the program compiled with hcc-hsail, the program behaves as expecte
 the program hangs.
 
 ## Generated assembly
-I dumped the assemble for both the version compiled with hcc-lc and hcc-hsail, and included them in the repository.
+I dumped the assembly for both the version compiled with hcc-lc and hcc-hsail using rocm-gdb, and included them in the repository.
 In the hcc-lc version, we see that the workitem_vgpr_count is 137. This is for a tile size of 32 * 32. It follows that the total
 register size for a workgroup is 32 * 32 * 137 * 4, which exceeds the size of the register file for a single GCN 3.0 
 Compute Unit (4 * 64Kb).
