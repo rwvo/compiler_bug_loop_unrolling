@@ -8,7 +8,7 @@ To compile with hcc-hsail: `make clean; make hsail; ./matmul`. This version beha
 instantaneously.
 
 ## Testing environment
-I compiled and ran all code examples on an i7 6700k with an AMD R9 Nano (Fiji) dGPU, with ROMc 1.2.
+I compiled and ran all code examples on an i7 6700k with an AMD R9 Nano (Fiji) dGPU, with ROCm 1.2.
 
 ## Code description
 Kernel does a tiled version of matrix muliplication: each workgroup loads a tile from input matrices A and B into tile 
