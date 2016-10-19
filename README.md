@@ -41,7 +41,7 @@ The hcc-hsail version does not do full unrolling; the unroll factor is only two,
 used, but also to loss of performance.
 
 ## Remarks
-From performance experiments, it follows that loop unrolling has a considerable impact on performance, and I would prefer not
+From performance experiments, I know that loop unrolling has a considerable impact on performance, and I would prefer not
 to give that up. I see two obvious ways to keep (some) unrolling, but using fewer registers:
 
 Current code (schematically)
